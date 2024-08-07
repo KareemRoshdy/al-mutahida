@@ -244,36 +244,57 @@
       </section>
 
       <!-- Contact Us -->
+
+      <footer class="bg-gray-50">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <div class="flex justify-center text-teal-600 sm:justify-start">
+              <h1 class="text-2xl font-bold">المتحدة لصيانة السارات</h1>
+            </div>
+
+            <p
+              class="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right"
+            >
+              Copyright &copy; <span id="year">2024</span>. All rights reserved
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="js/script.js"></script>
 
     <script>
-      function checkTime() {
-        const now = new Date();
+      const year = document.querySelector("#year");
 
-        // الحصول على الوقت الحالي بتوقيت UTC
-        const localHours = now.getHours();
+      const data = new Date();
+      const currentYear = data.getFullYear();
+      year.innerHTML = currentYear;
+      // function checkTime() {
+      //   const now = new Date();
 
-        // أوقات الظهور والإخفاء بالساعة (بالتوقيت المحلي)
-        const startHour = 11; // الساعة 11 صباحًا
-        const endHour = 21; // الساعة 9 مساءً
+      //   // الحصول على الوقت الحالي بتوقيت UTC
+      //   const localHours = now.getHours();
 
-        const linkButton = document.getElementById("link");
+      //   // أوقات الظهور والإخفاء بالساعة (بالتوقيت المحلي)
+      //   const startHour = 11; // الساعة 11 صباحًا
+      //   const endHour = 21; // الساعة 9 مساءً
 
-        if (localHours >= startHour && localHours < endHour) {
-          linkButton.style.display = "block"; // إظهار الزر
-        } else {
-          linkButton.style.display = "none"; // إخفاء الزر
-        }
-      }
+      //   const linkButton = document.getElementById("link");
 
-      // تنفيذ الدالة عند تحميل الصفحة
-      document.addEventListener("DOMContentLoaded", function () {
-        checkTime(); // التحقق من الوقت عند تحميل الصفحة
+      //   if (localHours >= startHour && localHours < endHour) {
+      //     linkButton.style.display = "block"; // إظهار الزر
+      //   } else {
+      //     linkButton.style.display = "none"; // إخفاء الزر
+      //   }
+      // }
 
-        // التحقق من الوقت كل دقيقة
-        setInterval(checkTime, 60000);
-      });
+      // // تنفيذ الدالة عند تحميل الصفحة
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   checkTime(); // التحقق من الوقت عند تحميل الصفحة
+
+      //   // التحقق من الوقت كل دقيقة
+      //   setInterval(checkTime, 60000);
+      // });
     </script>
   </body>
 </html>
