@@ -319,36 +319,9 @@
 
     <script>
       const year = document.querySelector("#year");
-
       const data = new Date();
       const currentYear = data.getFullYear();
       year.innerHTML = currentYear;
-      // function checkTime() {
-      //   const now = new Date();
-
-      //   // الحصول على الوقت الحالي بتوقيت UTC
-      //   const localHours = now.getHours();
-
-      //   // أوقات الظهور والإخفاء بالساعة (بالتوقيت المحلي)
-      //   const startHour = 11; // الساعة 11 صباحًا
-      //   const endHour = 21; // الساعة 9 مساءً
-
-      //   const linkButton = document.getElementById("link");
-
-      //   if (localHours >= startHour && localHours < endHour) {
-      //     linkButton.style.display = "block"; // إظهار الزر
-      //   } else {
-      //     linkButton.style.display = "none"; // إخفاء الزر
-      //   }
-      // }
-
-      // // تنفيذ الدالة عند تحميل الصفحة
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   checkTime(); // التحقق من الوقت عند تحميل الصفحة
-
-      //   // التحقق من الوقت كل دقيقة
-      //   setInterval(checkTime, 60000);
-      // });
     </script>
   </body>
 </html>
